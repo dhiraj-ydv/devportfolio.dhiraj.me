@@ -76,8 +76,8 @@ header nav ul li a:hover {
 }
 
 section {
-    padding: 0 0 1em 0; /* Reduced bottom padding by half */
-    margin-top: 0; /* Removed top margin */
+    padding: 0 ;
+    margin-top: 0;
 }
 
 section h2 {
