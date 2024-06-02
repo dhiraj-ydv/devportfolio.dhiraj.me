@@ -9,16 +9,16 @@ body {
 
 header {
     background: #f4f4f4; /* Same as body background */
-    padding: 1em 0; /* Reduced vertical padding */
+    padding: 3em 0 3em 0; /* Reduced vertical padding */
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
+header .navbar {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
-    padding-left: 10%; /* Same padding as section titles */
+    padding-left: 5%; /* Same padding as section titles */
 }
 
 header .header-content {
@@ -72,12 +72,12 @@ header nav ul li a:hover {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 0;
 }
 
 section {
-    padding: 0 0 1em 0; /* Reduced bottom padding by half */
-    margin-top: 0; /* Removed top margin */
+    padding: 0; /* Reduced bottom padding by half */
+    margin: 0 0 3.5em 0; /* Removed top margin */
 }
 
 section h2 {
