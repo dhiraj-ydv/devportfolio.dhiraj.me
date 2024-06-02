@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f4f4f4; /* Same as navbar background */
+}
+
+header {
+    background: #f4f4f4; /* Same as body background */
+    padding: 1em 0; /* Reduced vertical padding */
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 10%; /* Same padding as section titles */
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 100px; /* Increased size */
+    height: 100px; /* Increased size */
+    border-radius: 50%;
+    margin-right: 2em; /* Increased margin */
+}
+
+header .title-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em; /* Adjusted font size */
+    font-weight: bold;
+    color: #333;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 0.5em;
+}
+
+header nav ul li {
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #555;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+section {
+    padding: 0 0 1em 0; /* Reduced bottom padding by half */
+    margin-top: 0; /* Removed top margin */
+}
+
+section h2 {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Applied Google Font */
+    font-weight: 600;
+    color: #555; /* Changed to a shade of grey */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Same text shadow */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.flex-item {
+    flex: 1 1 45%;
+}
+
+.project, .education-list li, .skill-category {
+    background: #fff;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #eee;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.skill-category {
+    margin-bottom: 2em;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
