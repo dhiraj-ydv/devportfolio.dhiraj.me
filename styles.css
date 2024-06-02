@@ -71,7 +71,7 @@ header nav ul li a:hover {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 1em auto;
+    margin: 0 0 0 2em;
     padding: 0;
 }
 
