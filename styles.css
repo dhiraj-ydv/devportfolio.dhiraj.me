@@ -9,9 +9,9 @@ body {
 
 header {
     background: #f4f4f4; /* Same as body background */
-    padding: 3em 0 3em 0; /* Reduced vertical padding */
+    padding: 3em 0 0 0; /* Reduced vertical padding */
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 header .navbar {
