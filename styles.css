@@ -1,109 +1,109 @@
+/* General styles */
 body {
+    background-color: #121212;
+    color: #e0e0e0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
-    background: #f4f4f4; /* Same as navbar background */
 }
 
-header {
-    background: #f4f4f4; /* Same as body background */
-    padding: 3em 0 2em 0; /* Reduced vertical padding */
-    width: 100%;
-    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-}
-
-header .navbar {
+/* Navbar styles */
+nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start; /* Align content to the left */
-    padding-left: 5%; /* Same padding as section titles */
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    height: 100px; /* Set consistent vertical height */
 }
 
-header .header-content {
-    display: flex;
-    align-items: center;
-}
-
-header .logo {
-    width: 100px; /* Increased size */
-    height: 100px; /* Increased size */
-    border-radius: 50%;
-    margin-right: 2em; /* Increased margin */
-}
-
-header .title-links {
+nav .logo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center; /* Center content vertically */
+    height: 100%;
 }
 
-header h1 {
+nav .logo h1 {
     margin: 0;
-    font-size: 2em; /* Adjusted font size */
+    font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #fff;
+    text-align: left; /* Align text to the left */
 }
 
-header nav ul {
+nav ul {
     list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
-    margin-top: 0.5em;
 }
 
-header nav ul li {
-    margin-right: 1em;
+nav ul li {
+    margin-left: 20px;
 }
 
-header nav ul li a {
-    color: #333;
+nav ul li a {
+    color: #e0e0e0;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 24px; /* Increase icon size */
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-header nav ul li a:hover {
-    color: #555;
+nav ul li a:hover {
+    color: #bb86fc;
 }
 
+/* Content styles */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: 20px;
 }
 
 section {
-    padding: 0; /* Reduced bottom padding by half */
-    margin: 0 0 3.5em 0; /* Removed top margin */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 section h2 {
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif; /* Applied Google Font */
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #555; /* Changed to a shade of grey */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Same text shadow */
+    color: #bb86fc;
+    margin-bottom: 20px;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 20px;
 }
 
 .flex-item {
     flex: 1 1 45%;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.project, .education-list li, .skill-category {
-    background: #fff;
-    margin: 1em 0;
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.flex-item h3 {
+    margin-top: 0;
+    color: #bb86fc;
+}
+
+.flex-item p {
+    color: #e0e0e0;
 }
 
 .skills-list {
@@ -114,17 +114,43 @@ section h2 {
 }
 
 .skills-list li {
-    background: #eee;
-    margin: 0.5em;
-    padding: 0.5em 1em;
+    background: #333;
+    margin: 5px;
+    padding: 10px;
     border-radius: 4px;
+    color: #e0e0e0;
 }
 
 .skill-category {
-    margin-bottom: 2em;
+    margin-bottom: 20px;
 }
 
 .education-list {
     list-style: none;
     padding: 0;
+}
+
+.project, .education-list li, .skill-category {
+    background: #2c2c2c;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-top: 1px solid #333;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
