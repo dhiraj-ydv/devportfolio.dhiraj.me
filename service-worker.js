@@ -1,36 +1,53 @@
-const CACHE_NAME = 'my-cache-v2'; // Update the cache name when changes are made
+// Service Worker
+
+const CACHE_NAME = 'my-site-cache-v3';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/scripts.js'
+  '/',
+  '/styles.css',
+  '/scripts.js',
+  '/profile.jpg',
+  '/index.html'
 ];
 
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(urlsToCache);
-        })
-    );
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
+  );
+  self.skipWaiting();
 });
 
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
-        })
-    );
+self.addEventListener('activate', event => {
+  const cacheWhitelist = [CACHE_NAME];
+  event.waitUntil(
+    caches.keys().then(keyList => {
+      return Promise.all(keyList.map(key => {
+        if (cacheWhitelist.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+  return self.clients.claim();
 });
 
-self.addEventListener('activate', (event) => {
-    const cacheWhitelist = [CACHE_NAME];
-    event.waitUntil(
-        caches.keys().then((keyList) =>
-            Promise.all(keyList.map((key) => {
-                if (!cacheWhitelist.includes(key)) {
-                    return caches.delete(key);
-                }
-            }))
-        )
-    );
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      })
+  );
+});
+
+self.addEventListener('message', event => {
+  if (event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
 });
