@@ -26,7 +26,7 @@ nav .logo {
 
 nav .logo h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: font-size: 3em;;
     font-weight: bold;
     color: #fff;
     text-align: left; /* Align text to the left */
@@ -46,7 +46,7 @@ nav ul li {
 nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
-    font-size: 24px; /* Increase icon size */
+    font-size: 20px; /* Increase icon size */
     display: flex;
     align-items: center;
     height: 100%;
@@ -143,13 +143,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-nav ul li a {
-    font-size: 24px; /* Adjust the font size as needed */
-}
-
-.navbar .logo h1 {
-    font-size: 3em; /* Adjust the font size as needed */
-    font-weight: bold;
 }
