@@ -1,3 +1,8 @@
+# Load the current styles.css content
+styles_css_path = os.path.join(project_dir, 'styles.css')
+
+with open(styles_css_path, 'w') as file:
+    file.write("""
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -26,7 +31,7 @@ nav .logo {
 
 nav .logo h1 {
     margin: 0;
-     font-size: 3em; /* Adjust the font size as needed */
+    font-size: 3em; /* Adjust the font size as needed */
     font-weight: bold;
     color: #fff;
     text-align: left; /* Align text to the left */
@@ -39,6 +44,10 @@ nav ul {
     padding: 0;
 }
 
+nav ul li {
+    margin-left: 20px; /* Add space between icons */
+}
+
 nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
@@ -46,6 +55,10 @@ nav ul li a {
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+nav ul li a:hover {
+    text-decoration: none; /* Remove underline on hover */
 }
 
 /* Content styles */
@@ -145,3 +158,10 @@ nav ul li a {
     font-size: 2em; /* Adjust the font size as needed */
     font-weight: bold;
 }
+""")
+
+# Verify the updated content
+with open(styles_css_path, 'r') as file:
+    updated_styles_css_content = file.read()
+
+updated_styles_css_content
