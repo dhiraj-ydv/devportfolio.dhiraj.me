@@ -1,10 +1,9 @@
-
-const CACHE_NAME = 'my-site-cache-v2';
+const CACHE_NAME = 'my-site-cache-v3'; // Update the version here
 const urlsToCache = [
     '/',
     '/index.html',
-    '/styles.css',
-    '/scripts.js',
+    '/styles.css?v=2',
+    '/scripts.js?v=2',
     '/profile.jpg',
     '/favicon.ico'
 ];
@@ -18,6 +17,7 @@ self.addEventListener('install', event => {
                 return cache.addAll(urlsToCache);
             })
     );
+    self.skipWaiting(); // Force the waiting service worker to become the active service worker
 });
 
 // Activate and clear old cache
@@ -34,6 +34,7 @@ self.addEventListener('activate', event => {
             );
         })
     );
+    self.clients.claim(); // Ensure that the new service worker takes over immediately
 });
 
 // Fetch and update cache
