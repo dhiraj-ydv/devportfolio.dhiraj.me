@@ -1,7 +1,5 @@
 /* General styles */
 body {
-    
-    
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,7 +14,6 @@ nav {
     padding: 10px 20px;
     background-color: #333333;
     color: #fff;
-    /*border: 1px solid #bb86fc;*/
     height: 100px; /* Set consistent vertical height */
 }
 
@@ -68,10 +65,7 @@ nav ul li a:hover {
 }
 
 section {
-    
     padding: 2px;
-    
-    
 }
 
 section h2 {
@@ -128,7 +122,6 @@ section h2 {
 }
 
 .project, .education-list li, .skill-category {
-    
     margin: 10px 0;
     padding: 20px;
     border-radius: 8px;
@@ -153,9 +146,10 @@ a:hover {
 }
 
 nav ul li a {
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 24px; /* Adjust the font size as needed */
 }
 
-nav .logo h1 {
-    font-size: 24px; /* Adjust the font size as needed */
+.navbar .logo h1 {
+    font-size: 3em; /* Adjust the font size as needed */
+    font-weight: bold;
 }
