@@ -112,11 +112,10 @@ section h2 {
 }
 
 .skills-list li {
-    background: #333;
+    background: #FAF9F6;
     margin: 5px;
     padding: 10px;
     border-radius: 4px;
-    color: #e0e0e0;
 }
 
 .skill-category {
