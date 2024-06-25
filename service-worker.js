@@ -1,9 +1,12 @@
-const CACHE_NAME = 'my-site-cache-v6';
+
+const CACHE_NAME = 'my-site-cache-v2';
 const urlsToCache = [
     '/',
-    '/styles/main.css',
-    '/scripts/scripts.js',
-    // Add other assets you want to cache
+    '/index.html',
+    '/styles.css',
+    '/scripts.js',
+    '/profile.jpg',
+    '/favicon.ico'
 ];
 
 // Install and cache the files
