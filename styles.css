@@ -90,7 +90,7 @@ section h2 {
 
 .flex-item {
     flex: 1 1 45%;
-    background-color: #F9F6EE;
+    background-color: ;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -130,7 +130,7 @@ section h2 {
 }
 
 .project, .education-list li, .skill-category {
-    background: #2c2c2c;
+    background: #F9F6EE;
     margin: 10px 0;
     padding: 20px;
     border-radius: 8px;
