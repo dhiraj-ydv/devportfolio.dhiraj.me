@@ -1,10 +1,7 @@
-# Load the current styles.css content
-styles_css_path = os.path.join(project_dir, 'styles.css')
-
-with open(styles_css_path, 'w') as file:
-    file.write("""
 /* General styles */
 body {
+    
+    
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,9 +13,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 10px 20px;
     background-color: #333333;
     color: #fff;
+    /*border: 1px solid #bb86fc;*/
     height: 100px; /* Set consistent vertical height */
 }
 
@@ -31,7 +29,7 @@ nav .logo {
 
 nav .logo h1 {
     margin: 0;
-    font-size: 3em; /* Adjust the font size as needed */
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
     text-align: left; /* Align text to the left */
@@ -45,20 +43,20 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px; /* Add space between icons */
+    margin-left: 20px;
 }
 
 nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
-    font-size: 1.8em; /* Increase icon size */
+    font-size: 24px; /* Increase icon size */
     display: flex;
     align-items: center;
     height: 100%;
 }
 
 nav ul li a:hover {
-    text-decoration: none; /* Remove underline on hover */
+    color: #bb86fc;
 }
 
 /* Content styles */
@@ -70,7 +68,10 @@ nav ul li a:hover {
 }
 
 section {
+    
     padding: 2px;
+    
+    
 }
 
 section h2 {
@@ -127,6 +128,7 @@ section h2 {
 }
 
 .project, .education-list li, .skill-category {
+    
     margin: 10px 0;
     padding: 20px;
     border-radius: 8px;
@@ -154,14 +156,6 @@ nav ul li a {
     font-size: 18px; /* Adjust the font size as needed */
 }
 
-.navbar .logo h1 {
-    font-size: 2em; /* Adjust the font size as needed */
-    font-weight: bold;
+nav .logo h1 {
+    font-size: 24px; /* Adjust the font size as needed */
 }
-""")
-
-# Verify the updated content
-with open(styles_css_path, 'r') as file:
-    updated_styles_css_content = file.read()
-
-updated_styles_css_content
