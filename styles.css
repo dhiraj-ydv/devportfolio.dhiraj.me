@@ -48,10 +48,6 @@ nav ul li a {
     height: 100%;
 }
 
-nav ul li a:hover {
-    color: #bb86fc;
-}
-
 /* Content styles */
 .container {
     width: 90%;
