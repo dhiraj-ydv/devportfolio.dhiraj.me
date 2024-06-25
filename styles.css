@@ -67,7 +67,12 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-
+section {
+    
+    padding: 2px;
+    
+    
+}
 
 section h2 {
     text-transform: uppercase;
