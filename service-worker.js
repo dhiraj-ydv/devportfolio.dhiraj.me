@@ -1,9 +1,9 @@
-const CACHE_NAME = 'my-site-cache-v5';
+const CACHE_NAME = 'my-site-cache-v6';
 const urlsToCache = [
     '/',
     '/index.html',
-    '/styles.css?v=2',
-    '/scripts.js?v=2',
+    '/styles.css?v=3',
+    '/scripts.js?v=3',
     '/profile.jpg',
     '/favicon.ico'
 ];
